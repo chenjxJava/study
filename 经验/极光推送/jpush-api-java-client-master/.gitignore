@@ -1,0 +1,17 @@
+bin/
+.settings/
+.metadata/
+target/
+test-output/
+.idea/
+
+*.class
+*.project
+*.DS_Store
+*.war
+*.ear
+*.iml
+
+*.releaseBackup
+release.properties
+
