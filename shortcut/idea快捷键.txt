@@ -1,3 +1,0 @@
-1.ctrl+space	代码自动提示
-2.ctrl+o	file structure	
-3.crtl+shift+a	enter action or option

@@ -1,6 +1,0 @@
-    //加密
-    var s = new Base64().encode("参数值").replace(/=/g, "_bs");		
-    
-    //解密
-    var t = "参数值";
-    var d = new Base64().decode(t.replace(/_bs/g, "="));
