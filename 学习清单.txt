@@ -1,0 +1,10 @@
+学习清单
+idea开发工具使用
+  1.消息队列
+  2.数据库分表分库
+  3.springboot/springboot/springcloud
+  4.elasticsearch
+  5.hsf  tddl notify三大中间件
+  6.百度统计开发平台
+  7.spring task定时任务
+  8.cocos/unity/cgret/bui.js
