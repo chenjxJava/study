@@ -1,4 +1,4 @@
-package com.freemark.domain;
+package domain;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,7 @@ import java.util.List;
  * Created by admin on 2017-07-14.
  */
 public class Table {
-	private static  int num = 0;
+	private static  int num = 1;
 
 	public Table() {
 		num++;
@@ -15,8 +15,16 @@ public class Table {
 	}
 	private int index;				//索引
 	private String tableName;		//表名
+	private String tableDescption;		//表名
 	private List<Coloums> coloums = new ArrayList<Coloums>();
 
+	public String getTableDescption() {
+		return tableDescption;
+	}
+
+	public void setTableDescption(String tableDescption) {
+		this.tableDescption = tableDescption;
+	}
 
 	public int getIndex() {
 		return index;

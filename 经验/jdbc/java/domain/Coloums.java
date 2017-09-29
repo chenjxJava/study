@@ -1,4 +1,4 @@
-package com.freemark.domain;
+package domain;
 
 /**
  * Created by admin on 2017-07-14.
@@ -8,10 +8,28 @@ package com.freemark.domain;
  */
 public class Coloums {
 	private String cloumnsName;	//字段名
-	private String type;				//类型值
-	private String comment;			//注释
-	private String isNull;			//
+	private String type;				//类型
 	private String isPrimaryKey;//主键
+	private String isNull;			//非空
+	private String isAutoIncrement;			//主键增长
+	private String comment;			//注释
+	private String defaults;			//默认值
+
+	public String getIsAutoIncrement() {
+		return isAutoIncrement;
+	}
+
+	public void setIsAutoIncrement(String isAutoIncrement) {
+		this.isAutoIncrement = isAutoIncrement;
+	}
+
+	public String getDefaults() {
+		return defaults;
+	}
+
+	public void setDefaults(String defaults) {
+		this.defaults = defaults;
+	}
 
 	public String getCloumnsName() {
 		return cloumnsName;
@@ -58,9 +76,11 @@ public class Coloums {
 		return "Coloums{" +
 			"cloumnsName='" + cloumnsName + '\'' +
 			", type='" + type + '\'' +
-			", comment='" + comment + '\'' +
-			", isNull='" + isNull + '\'' +
 			", isPrimaryKey='" + isPrimaryKey + '\'' +
+			", isNull='" + isNull + '\'' +
+			", isAutoIncrement='" + isAutoIncrement + '\'' +
+			", comment='" + comment + '\'' +
+			", defaults='" + defaults + '\'' +
 			'}';
 	}
 }
