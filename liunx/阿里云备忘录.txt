@@ -1,0 +1,13 @@
+aliyun：panamagt    ali15927430505yun
+
+公网地址：120.78.147.1:22
+
+远程连接密码： 177397
+
+登入服务器
+用户名：root
+密码：Chenjx-318
+
+mysql
+用户名：root
+密码：chenjx
