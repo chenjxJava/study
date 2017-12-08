@@ -13,9 +13,9 @@
 ### 2.使用CDN方法(Content Delivery Network，即内容分发网络)<br>
 　　以下推荐国外比较稳定的两个CDN，国内还没发现哪一家比较好，目前还是建议下载到本地。<br>
 >
-BootCDN（国内）: https://cdn.bootcss.com/vue/2.2.2/vue.min.js<br>
-unpkg：https://unpkg.com/vue/dist/vue.js, 会保持和 npm 发布的最新的版本一致。<br>
-cdnjs : https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.8/vue.min.js<br>
+　BootCDN（国内）: https://cdn.bootcss.com/vue/2.2.2/vue.min.js<br>
+　unpkg：https://unpkg.com/vue/dist/vue.js, 会保持和 npm 发布的最新的版本一致。<br>
+　cdnjs : https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.8/vue.min.js<br>
 
 ### 3.npm安装
 [　　参考菜鸟教程](http://www.runoob.com/vue2/vue-install.html)
@@ -24,14 +24,14 @@ cdnjs : https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.8/vue.min.js<br>
 
 
 ### 三、简写
-####　　v-bind 缩写
->     <!-- 完整语法 -->
+#### v-bind 缩写
+>     　<!-- 完整语法 -->
 >	    <a v-bind:href="url"></a>
 >	    <!-- 缩写 -->
 >	    <a :href="url"></a>
 
-####　　v-on 缩写
->     <!-- 完整语法 -->
+#### v-on 缩写
+>     　<!-- 完整语法 -->
 >	    <a v-on:click="doSomething"></a>
 >	    <!-- 缩写 -->
 >	    <a @click="doSomething"></a>
