@@ -1,8 +1,8 @@
-#oracle DB
+# oracle DB
 
-###一、安装
+### 一、安装
 
-###二、命令行
+### 二、命令行
 
 1、运行SQLPLUS工具
 
@@ -67,9 +67,9 @@
 [　　Oracle命令（一）：Oracle登录命令](https://www.cnblogs.com/NaughtyBoy/p/3181052.html)<br>
 [　　Oracle一个创建用户、创建表空间、授权、建表的完整过程](http://skyuck.iteye.com/blog/847859#)
 
-###三、PLSQL连接oracle
+### 三、PLSQL连接oracle
 [　　参考百度经验“如何用PLSQL登录Oracle数据库”](https://jingyan.baidu.com/article/9c69d48fa3a80d13c9024ea0.html)
 
-###四、tnsname.ora设置
+### 四、tnsname.ora设置
 [　　参考百度经验“Oracle的tnsnames.ora配置(PLSQL Developer)”](https://jingyan.baidu.com/article/b0b63dbfcd34834a4930704a.html)
 
