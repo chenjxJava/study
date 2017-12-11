@@ -77,6 +77,7 @@
 5. Idea不能Alt+Enter提示生成变量(代码助手)
 - File-->setting-->editor-->intentions-->Introduce local variable
 
+<<<<<<< HEAD
 ![image](https://github.com/chenjxJava/photos/blob/master/idea/idea_code_intentions.png?raw=true)
 
 6.控制台中文乱码问题
@@ -86,6 +87,9 @@ jvm配置中，vm-option:-Dfile.encoding=UTF-8
 
 
 
+=======
+![image](https://github.com/chenjxJava/photos/blob/master/idea_code_intentions.png?raw=true)
+>>>>>>> parent of a3a5f3e... 整理
  
 
 
