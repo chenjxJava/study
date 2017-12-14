@@ -64,8 +64,8 @@
 
 <hr>
 参考:<br>
-[　　Oracle命令（一）：Oracle登录命令](https://www.cnblogs.com/NaughtyBoy/p/3181052.html)<br>
-[　　Oracle一个创建用户、创建表空间、授权、建表的完整过程](http://skyuck.iteye.com/blog/847859#)
+　　[Oracle命令（一）：Oracle登录命令](https://www.cnblogs.com/NaughtyBoy/p/3181052.html)<br>
+　　[Oracle一个创建用户、创建表空间、授权、建表的完整过程](http://skyuck.iteye.com/blog/847859#)
 
 ### 三、PLSQL连接oracle
 [　　参考百度经验“如何用PLSQL登录Oracle数据库”](https://jingyan.baidu.com/article/9c69d48fa3a80d13c9024ea0.html)
@@ -73,3 +73,39 @@
 ### 四、tnsname.ora设置
 [　　参考百度经验“Oracle的tnsnames.ora配置(PLSQL Developer)”](https://jingyan.baidu.com/article/b0b63dbfcd34834a4930704a.html)
 
+### FAQ
+1. [oracle 用Navicat创建的表的查询问题](https://www.cnblogs.com/baby123/p/4808969.html)
+<pre>
+navicat可视化创建了表，可是就是不能查到！这个为什么呢？
+
+select * from user;
+
+我们如果给user加上双引号才能查到
+
+select * from "user";
+
+结论：
+
+　　1、oracle表和字段是有大小写的区别。oracle默认是大写，如果我们用双引号括起来的就区分大小写，如果没有，系统会自动转成大写。
+
+　　2、我们在使用navicat使用可视化创建数据库时候，navicat自动给我们加上了“”，在创建数据库时实际的代码是这样的：　
+<pre>
+	DROP TABLE "ROOT"."user";
+	CREATE TABLE "ROOT"."user" (
+	"userid" NUMBER(2) NOT NULL 
+	)
+</pre>
+　　3、我用sql语句进行创建表和字段
+
+　　　　①不加双引号创建变大写
+
+　　　　②加双引号，跟我们使用navicat可视化操作一样 
+
+因此建议：
+
+1.还是养成手写sql语句的习惯，在创建的时候就不要使用了双引号！这样我们就可以到达像mysql等一样不区分大小写了。
+
+2.尽量养成大写操作数据库的习惯。
+</pre>
+
+##### [2.Navicat for Oracle基本用法图文教程](https://www.2cto.com/kf/201604/497696.html)
