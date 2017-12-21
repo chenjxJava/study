@@ -16,5 +16,19 @@ Git是分布式版本控制系统。
 1. git config --global user.name "chenjixing"
 2. git config --global user.email "chenjixing@ebupt.com"
 初始化git仓库
-3. git init Initialized empty Git repository in G:/location/gitRepository/.git/
+3. git init 
+4. git add readme.txt
+5. git commit -m "worte a readme file"
+   -m 后面就是本次提交的说明
+6. git status
+7. git diff
+
+</pre>
+
+<pre>
+总结：
+ 初始化一个Git仓库，使⽤git init命令。
+ 添加文件到Git仓库，分两步：
+ • 第一步，使用命令git add ，注意，可反复多次使用，添加多个文件；
+ • 第二步，使用命令git commit，完成。
 </pre>
