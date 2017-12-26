@@ -1,0 +1,9 @@
+# tomcat配置
+### 一、用户登入验证
+1. path/conf/tomcat-users.xml
+	<?xml version='1.0' encoding='utf-8'?>
+	<tomcat-users>
+	<role rolename="manager-gui"/>
+	<user username="admin" password="123" roles="manager-gui"/>
+	</tomcat-users>
+用户名为admin,密码为123
