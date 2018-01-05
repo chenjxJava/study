@@ -109,3 +109,15 @@ select * from "user";
 </pre>
 
 ##### [2.Navicat for Oracle基本用法图文教程](https://www.2cto.com/kf/201604/497696.html)
+
+### oracle sql
+<pre>
+// 
+SELECT m.*,ROWNUM FROM (
+	SELECT a.*,r.REJECT_REASON as reason FROM BOOKCHAPTER_AUDIT a
+					 LEFT JOIN BOOKCHAPTER_REJECT_RECODE r ON a.AUDIT_ID = r.AUDIT_ID
+					 WHERE
+							 a.CHAPTER_ID = 1938602739453441
+					 ORDER BY a.AUDIT_LAST_SUBMIT_TIME DESC
+) m WHERE ROWNUM = 1
+</pre>
