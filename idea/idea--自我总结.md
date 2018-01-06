@@ -6,25 +6,22 @@
 ![image](https://github.com/chenjxJava/photos/blob/master/idea/20171121144825.png?raw=true)
 2.idea激活方式 | help-->Register 
 
-<html>
-<div style="margin-left:40px">
-<img src="https://github.com/chenjxJava/photos/blob/master/idea/20171121152329.png?raw=true"/>
-</div>
-</html>
-
--     填入下面的license server:
-	  http://intellij.mandroid.cn/
-      http://idea.imsxm.com/
+![](https://github.com/chenjxJava/photos/blob/master/idea/20171121152329.png?raw=true)
+<pre>
+填入下面的license server:
+  http://intellij.mandroid.cn/
+  http://idea.imsxm.com/
+</pre>
 
 #### 二、基本配置
-1. 配置jdk
+##### 1.配置jdk
 
 ![image](https://github.com/chenjxJava/photos/blob/master/idea/idea_jdk1.png?raw=true)
 ![image](https://github.com/chenjxJava/photos/blob/master/idea/idea_jdk2.png?raw=true)
-2. 配置tomcat
-3. 配置svn
-4. 配置maven（不用配置）
-5. 设置默认注释 setting-Editor-File and Code-Files-Class
+##### 2.配置tomcat
+##### 3.配置svn
+##### 4.配置maven（不用配置）
+##### 5.设置默认注释 setting-Editor-File and Code-Files-Class
 ![image](https://github.com/chenjxJava/photos/blob/master/idea/idea_comment.png?raw=true)
 -     /** 
     	* @Author: ${USER}
@@ -32,6 +29,10 @@
     	* @Date: Created in ${TIME} ${DATE}
     	* @Modified By:
     	*/
+
+##### 6.配置datasource
+![](https://github.com/chenjxJava/photos/blob/master/idea/datasource.png?raw=true)
+
 #### 三、Idea学习网站 ( 参考：http://www.youmeek.com/)
 1. idea快捷键
 * http://blog.csdn.net/dc_726/article/details/42784275 十大快捷神键
@@ -45,7 +46,7 @@
 2. 
 
 #### 五、FAQ
-1. Idea maven工程的java包下xml文件是不会被打进jar包的,在pom文件中添加
+##### 1. Idea maven工程的java包下xml文件是不会被打进jar包的,在pom文件中添加
 >      <build>
     		<resources>
     			<resource>
@@ -57,7 +58,7 @@
     		</resources>
     	</build>
 
-2. 修改idea项目名称
+##### 2. 修改idea项目名称
 
 - Ctrl+shift+alt+s--->修改工程结构
 
@@ -66,31 +67,27 @@
  
 ![image](https://github.com/chenjxJava/photos/blob/master/idea/idea_project_name.png?raw=true)
  
-3. idea切换svn
+##### 3. idea切换svn
 
 ![image](https://github.com/chenjxJava/photos/blob/master/idea/idea_svn_change.png?raw=true)
  
-4. Configuration Error: deployment source '(projectname): war exploded' is not valid
+##### 4. Configuration Error: deployment source '(projectname): war exploded' is not valid
 
 ![image](https://github.com/chenjxJava/photos/blob/master/idea/idea_make_artifact.png?raw=true)
  
-5. Idea不能Alt+Enter提示生成变量(代码助手)
+##### 5. Idea不能Alt+Enter提示生成变量(代码助手)
 - File-->setting-->editor-->intentions-->Introduce local variable
 
-<<<<<<< HEAD
 ![image](https://github.com/chenjxJava/photos/blob/master/idea/idea_code_intentions.png?raw=true)
 
-6.控制台中文乱码问题
+##### 6.控制台中文乱码问题
 jvm配置中，vm-option:-Dfile.encoding=UTF-8
 
 ![image](https://github.com/chenjxJava/photos/blob/master/idea/%E6%8E%A7%E5%88%B6%E5%8F%B0%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98.png?raw=true)
 
 
 
-=======
-![image](https://github.com/chenjxJava/photos/blob/master/idea_code_intentions.png?raw=true)
->>>>>>> parent of a3a5f3e... 整理
- 
+
 
 
 

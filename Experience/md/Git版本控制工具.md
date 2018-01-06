@@ -86,7 +86,7 @@ ps：
   1.使用命令行时，每次文件改动，需要重新add commit
 </pre>
 
-* 入门篇（二）：克隆远程库，切换分支
+* 入门篇（二）：克隆远程库，切换分支流程
 <br>参考：[git切换远程分支](http://www.cnblogs.com/libertycode/p/5858450.html)
 <pre>
 git clone只能clone远程库的master分支，无法clone所有分支，解决办法如下：
@@ -100,6 +100,25 @@ remotes/origin/release
 6. git checkout -b dev origin/dev，作用是checkout远程的dev分支，在本地起名为dev分支，并切换到本地的dev分支
 7. git checkout -b release origin/release，作用参见上一步解释
 8. git checkout dev，切换回dev分支，并开始开发。
+</pre>
+
+* 入门篇（二）：git分支操作，推送gitlab、github
+<br>参考：[Github 创建新分支](http://blog.csdn.net/top_code/article/details/51931916)
+<pre>
+// 一、查看分支
+1. git branch  查看本地分支
+2. git branch -r  查看远程分支
+3. git branch -a  查看所有分支
+4. git branch [branch name] 本地创建新的分支
+
+// 二、切换新分支
+1. git checkout [branch name]  切换分支
+2. git checkout -b [branch name] 创建切换分支
+3. git push origin [branch name] 将分支推送到github
+
+// 三、删除分支
+1. git branch -d [branch name] 删除本地分支
+2. git push origin :[branch name] 删除远程分支 
 </pre>
 
 
@@ -155,6 +174,7 @@ git show stash@{0} # see the last stash
 git stash pop      # apply last stash and remove it from the list
 
 git stash --help   # for more info
-
 </pre>
+
+
 
