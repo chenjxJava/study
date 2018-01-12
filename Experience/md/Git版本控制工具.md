@@ -54,7 +54,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 </pre>
 
 <pre>
-场景1：当你改乱了⼯工作区某个⽂文件的内容，想直接丢弃⼯工作区的修改时，⽤用命令git checkout -- file。 
+场景1：当你改乱了⼯工作区某个⽂文件的内容，想直接丢弃⼯工作区的修改时，⽤用命令git checkout -- [file]。 
 场景2：当你不但改乱了⼯工作区某个⽂文件的内容，还添加到了暂存区时，想丢弃修改，分两 步，第⼀一步⽤用命令git reset HEAD 
 file，就回到了场景1，第二步按场景1操作。 
 场景3：已经提交了不合适的修改到版本库时，想要撤销本次提交，参考版本回退⼀一节，不过前提是没有推送到远程库。
@@ -75,7 +75,7 @@ file，就回到了场景1，第二步按场景1操作。
 //初始化git仓库
 3. git init 
 4. git add readme.txt
-5. git checkout -- <file>  // to discard changes in working directory
+5. git checkout -- &lt;file&gt;  // to discard changes in working directory
 6. git reset HEAD readme.txt //
 6. git commit -m "worte a readme file"
    -m 后面就是本次提交的说明
@@ -178,5 +178,10 @@ git stash pop      # apply last stash and remove it from the list
 git stash --help   # for more info
 </pre>
 
+### FAQ
+##### 1.对于脱离版本控制，不能再次添加的文件
+<pre>
+idea飘红，脱离版本控制，不能git add到版本控制的文件。
 
-
+解决方法：先剪切到别的地方，git pull,再撤销。
+</pre>
