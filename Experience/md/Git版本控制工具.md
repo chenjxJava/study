@@ -32,6 +32,11 @@ Git是分布式版本控制系统。
 $ git status
 On branch master
 Your branch is up-to-date with 'origin/master'.
+// 本地master分支
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   readme.txt
 // stage暂存区
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
@@ -39,12 +44,11 @@ Changes not staged for commit:
 
         modified:   readme.txt
 // 工作区
-Untracked files: 
+Untracked files:
   (use "git add <file>..." to include in what will be committed)
 
-        test.md
+        1.txt
 
-no changes added to commit (use "git add" and/or "git commit -a")
 </pre>
 <pre>
 1."git add"把文件添加进去，实际上就是把文件修改添加到暂存区；
@@ -74,9 +78,9 @@ file，就回到了场景1，第二步按场景1操作。
 2. git config --global user.email "chenjixing@ebupt.com"
 //初始化git仓库
 3. git init 
-4. git add readme.txt
+4. git add &lt;file&gt;
 5. git checkout -- &lt;file&gt;  // to discard changes in working directory
-6. git reset HEAD readme.txt //
+6. git reset HEAD &lt;file&gt; // 反向commit操作
 6. git commit -m "worte a readme file"
    -m 后面就是本次提交的说明
 7. git status 查看版本库状态
@@ -180,6 +184,13 @@ git stash --help   # for more info
 
 ### FAQ
 ##### 1.对于脱离版本控制，不能再次添加的文件
+<pre>
+idea飘红，脱离版本控制，不能git add到版本控制的文件。
+
+解决方法：先剪切到别的地方，git pull,再撤销。
+</pre>
+
+##### 2.对于脱离版本控制，不能再次添加的文件
 <pre>
 idea飘红，脱离版本控制，不能git add到版本控制的文件。
 
