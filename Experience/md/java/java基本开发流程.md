@@ -1,6 +1,6 @@
 # java基本开发流程
-> 就是大概写一下，SSM（Spring Springmvc Mybatis）框架的基本流程。
-
+> 就是大概写一下，SSM（Spring Springmvc Mybatis）框架的基本流程。<br>
+> 如果没有框架,可以clone我的ssm-empty工程。
 ### 0.你的现有一张表
 <pre>
 // user_t.sql
