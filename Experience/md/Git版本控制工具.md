@@ -182,6 +182,11 @@ git stash pop      # apply last stash and remove it from the list
 git stash --help   # for more info
 </pre>
 
+### 二、idea中操作git
+参考：[Intellij 中的git操作](http://blog.csdn.net/lovesummerforever/article/details/50032937)
+<pre>
+</pre>
+
 ### FAQ
 ##### 1.对于脱离版本控制，不能再次添加的文件
 <pre>

@@ -34,7 +34,9 @@
 ![](https://github.com/chenjxJava/photos/blob/master/idea/datasource.png?raw=true)
 
 #### 三、Idea学习网站 ( 参考：http://www.youmeek.com/)
-1. idea快捷键
+1. [IDEA 使用入门](http://blog.csdn.net/fatshaw/article/details/52126962)
+
+2. idea快捷键
 * http://blog.csdn.net/dc_726/article/details/42784275 十大快捷神键
 * http://www.cnblogs.com/zhangpengshou/p/5366413.html 快捷键大全
 
