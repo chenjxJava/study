@@ -1,4 +1,5 @@
 # Spring定时任务
+学习：[quartz-core-learning](https://github.com/dufyun/quartz-core-learning)<br>
 参考：[Spring定时任务的几种实现](http://gong1208.iteye.com/blog/1773177)
 ### 一、使用场景
 <pre>
@@ -40,3 +41,10 @@ org.springframework.scheduling.quartz.CronTriggerBean
 3.调度工厂
 org.springframework.scheduling.quartz.SchedulerFactoryBean
 </pre>
+
+// 加载类
+ClassUtils-111-return classLoaderToUse.loadClass(name);
+
+### 四、quartz好好学习
+[Quartz学习——Spring和Quartz集成详解（三）](http://blog.csdn.net/u010648555/article/details/54891264)
+http://blog.csdn.net/u010648555/article/details/54891264
