@@ -1,6 +1,8 @@
 # idea— —自我总结
 #### 导语  
-> 个人认为idea是功能比eclipse强大N多倍的一个开发工具，能够大幅提升开发者的开发速度。[idea官网下载](https://www.jetbrains.com/idea//)
+> 个人认为idea是功能比eclipse强大N多倍的一个开发工具，能够大幅提升开发者的开发速度。[idea官网下载](https://www.jetbrains.com/idea//)<br>
+[IntelliJ IDEA 使用教程-极客学院](http://wiki.jikexueyuan.com/project/intellij-idea-tutorial/interface-introduce.html)<br>
+[IntelliJ IDEA 2017.3 Help官方文档](http://www.jetbrains.com/help/idea/configuring-projects.html)
 #### 一、idea安装
 1.访问官网下载.exe文件，完成默认安装
 ![image](https://github.com/chenjxJava/photos/blob/master/idea/20171121144825.png?raw=true)
@@ -12,6 +14,15 @@
   http://intellij.mandroid.cn/
   http://idea.imsxm.com/
 </pre>
+
+### 重要：project和module概念
+参考：![](http://blog.csdn.net/sdujava2011/article/details/46801619)
+<pre>
+一个Project是可以由很多个Module组成的。 
+比如我下面的leetcode项目，leetcode是题目是有easy、medium和Hard三种级别的，所以我的项目中应该会有三个分别对应的Module，我还没开始做
+Hard，所以少了Hard的目录，然后无论是哪个Module，我都会使用到我自己封装的日志工具，所以我有一个专门的Module用来放工具类，Module之间可以相互引用。
+</pre>
+![](https://github.com/chenjxJava/photos/blob/master/idea/idea_project_module.png?raw=true)
 
 #### 二、基本配置
 ##### 1.配置jdk
