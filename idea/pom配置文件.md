@@ -1,0 +1,42 @@
+# pom.xml配置文件
+### 1.maven编译
+<pre>
+&lt;build&gt;
+	&lt;finalName&gt;ssm&lt;/finalName&gt;
+	&lt;defaultGoal&gt;package&lt;/defaultGoal&gt;
+	&lt;sourceDirectory&gt;src&lt;/sourceDirectory&gt;
+	&lt;testSourceDirectory&gt;src/test&lt;/testSourceDirectory&gt;
+	&lt;resources&gt;
+		&lt;resource&gt;
+			&lt;directory&gt;src&lt;/directory&gt;
+			&lt;excludes&gt;
+				&lt;exclude&gt;**/*.java&lt;/exclude&gt;
+			&lt;/excludes&gt;
+		&lt;/resource&gt;
+		&lt;resource&gt;
+			&lt;directory&gt;config&lt;/directory&gt;
+			&lt;excludes&gt;
+				&lt;exclude&gt;**/*.java&lt;/exclude&gt;
+			&lt;/excludes&gt;
+		&lt;/resource&gt;
+	&lt;/resources&gt;
+	&lt;plugins&gt;
+		&lt;plugin&gt;
+			&lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
+			&lt;version&gt;3.3&lt;/version&gt;
+			&lt;configuration&gt;
+				&lt;source&gt;1.7&lt;/source&gt;
+				&lt;target&gt;1.7&lt;/target&gt;
+			&lt;/configuration&gt;
+		&lt;/plugin&gt;
+		&lt;plugin&gt;
+			&lt;artifactId&gt;maven-war-plugin&lt;/artifactId&gt;
+			&lt;version&gt;2.6&lt;/version&gt;
+			&lt;configuration&gt;
+				&lt;warSourceDirectory&gt;src/main/webapp&lt;/warSourceDirectory&gt;
+				&lt;failOnMissingWebXml&gt;false&lt;/failOnMissingWebXml&gt;
+			&lt;/configuration&gt;
+		&lt;/plugin&gt;
+	&lt;/plugins&gt;
+&lt;/build&gt;
+</pre>

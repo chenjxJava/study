@@ -54,3 +54,43 @@ Jquery解码：decodeURIComponent(url);
 
 Jquery编码：encodeURIComponent(url);
 
+### 1.5 限制浏览器后退
+<pre>
+//防止页面后退
+history.pushState(null, null, document.URL);
+window.addEventListener('popstate', function () {
+	history.pushState(null, null, document.URL);
+});
+
+
+<form>
+	<input type="hidden" name="refreshedFlag" value="no">
+</form>
+<script type="text/javascript">
+	onload=function(){
+		var e = $("input[type='hidden']")[0];
+		if(e.value=="no") {
+			e.value="yes";
+		}else{
+			e.value="no";
+			location.reload();
+		}
+	}
+</script>
+</pre>
+
+### 1.6 浏览器后退，页面刷新
+<pre>
+&lt;script type="text/javascript"&gt;
+	window.onload = function(){
+		if(window.name!="hasLoad"){
+			location.reload();
+			window.name = "hasLoad";
+		}else{
+			window.name="";
+		}
+	}
+&lt;/script&gt;
+</pre>
+
+
