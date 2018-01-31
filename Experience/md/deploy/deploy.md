@@ -15,8 +15,9 @@
 ### 二、如何部署发布项目
 > 1.打war包 2.上传war包 3.重启tomcat
 
+![](https://github.com/chenjxJava/photos/blob/master/idea/idea_maven_package_plugin.png?raw=true)
 <pre>
-1.使用idea打war包，其他方式，自行百度
+1.使用idea打war包（见上图），其他方式，自行百度
 
 2.使用xshell,连接服务器
 <pre>
