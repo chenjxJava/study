@@ -6,13 +6,18 @@
 #### 一、idea安装
 1.访问官网下载.exe文件，完成默认安装
 ![image](https://github.com/chenjxJava/photos/blob/master/idea/20171121144825.png?raw=true)
-2.idea激活方式 | help-->Register 
+2.idea激活方式 | help-->Register（失效了！！！）
 
 ![](https://github.com/chenjxJava/photos/blob/master/idea/20171121152329.png?raw=true)
 <pre>
 填入下面的license server:
   http://intellij.mandroid.cn/
   http://idea.imsxm.com/
+</pre>
+最新激活方式
+参考：[Idea 2017.3以后版本的破解](http://www.cnblogs.com/legoo/p/8214165.html)
+<pre>
+1.
 </pre>
 
 ### 重要：project和module概念
