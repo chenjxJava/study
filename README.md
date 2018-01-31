@@ -29,12 +29,18 @@
 
 ##### 三、linux
 [Linux学习（跟鸟哥学就ok了）](http://linux.vbird.org/linux_basic/)
+<pre>
 1. Linux操作系统介绍与安装。
 2. Linux常用命令。
 3. Linux常用软件安装。
 4. Linux网络。
 5. 防火墙。
 6. Shell编程等。
+
+</pre>
+
+[关于服务器项目部署](https://github.com/chenjxJava/study/blob/master/Experience/md/deploy/deploy.md)
+
 
 ##### 四、Git版本控制工具
 [Git版本控制工具](https://github.com/chenjxJava/study/blob/master/Experience/md/Git%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E5%B7%A5%E5%85%B7.md)
@@ -47,7 +53,7 @@
  
 #### 第四部分 
 ##### [一、Powerful Tool（百度网盘、好用、辅助工具）](https://github.com/chenjxJava/study/blob/master/Experience/md/Powerful%20Tool%EF%BC%88%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E3%80%81%E5%A5%BD%E7%94%A8%E3%80%81%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%EF%BC%89.md)
-##### 二、[在线文档-自我整理](https://github.com/chenjxJava/study/blob/master/Experience/md/%E5%9C%A8%E7%BA%BF%E6%96%87%E6%A1%A3.md)
+##### [二、在线文档-自我整理](https://github.com/chenjxJava/study/blob/master/Experience/md/%E5%9C%A8%E7%BA%BF%E6%96%87%E6%A1%A3.md)
 
  
 
