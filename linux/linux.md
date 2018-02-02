@@ -31,3 +31,4 @@ ln -s a b 中的 a 就是源文件，b是链接文件名,其作用是当进入b�
 ln -s  /home/adminwx/picture_storage/ upload
 </pre>
 
+3.[webpack设置代理出现的问题](https://www.jianshu.com/p/19a6aefca350)
