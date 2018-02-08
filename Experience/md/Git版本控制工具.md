@@ -1,5 +1,15 @@
 # Git版本控制工具
-介绍使用：[IDEA中Git的使用](https://www.cnblogs.com/wyb628/p/7243776.html)
+> 分布式版本控制<br>
+> 分支管理<br>
+<pre>
+PS:
+  1.只针对于纯文本，图片、microsoft的Word格式是二进制格式。
+  2.编码，推荐使用UTF-8格式。
+  3.window系统不要用自带的编辑器，因为总会出现问题。
+</pre>
+
+介绍使用：[IDEA中Git的使用](https://www.cnblogs.com/wyb628/p/7243776.html)<br>
+强大：[Git Cheat Sheet 中文版](https://github.com/flyhigher139/Git-Cheat-Sheet)
 <pre>
 CVS和SVN都是集中式的版本控制系统。
 Git是分布式版本控制系统。
@@ -14,7 +24,7 @@ Git是分布式版本控制系统。
 * Git 官网下载：[http://git-scm.com/](http://git-scm.com/)
 * TortoiseGit 官网下载：[http://download.tortoisegit.org/tgit/](http://download.tortoisegit.org/tgit/)
 
-### 重要：工作区和暂存区
+### 重要：工作区、版本库和暂存区
 <pre>
 1.Git和其他版本控制系统如SVN的一个不同之处就是有暂存区的概念。
 2.工作区（Working Directory）:
@@ -53,11 +63,14 @@ Untracked files:
 <pre>
 1."git add"把文件添加进去，实际上就是把文件修改添加到暂存区；
 2."git commit"提交更改，实际上就是把暂存区的所有内容提交到当前分支。
+3."git push"推送。
+
 因为我们创建Git版本库时，Git自动为我们创建了唯⼀一⼀一个master分⽀支，所以，现在，commit就是往master分⽀支上提交更改。
 你可以简单理解为，需要提交的⽂文件修改通通放到暂存区，然后，⼀一次性提交暂存区的所有修改。 
 </pre>
 
 <pre>
+// 版本回退
 场景1：当你改乱了⼯工作区某个⽂文件的内容，想直接丢弃⼯工作区的修改时，⽤用命令git checkout -- [file]。 
 场景2：当你不但改乱了⼯工作区某个⽂文件的内容，还添加到了暂存区时，想丢弃修改，分两 步，第⼀一步⽤用命令git reset HEAD 
 file，就回到了场景1，第二步按场景1操作。 
@@ -80,12 +93,12 @@ file，就回到了场景1，第二步按场景1操作。
 3. git init 
 4. git add &lt;file&gt;
 5. git checkout -- &lt;file&gt;  // to discard changes in working directory
-6. git reset HEAD &lt;file&gt; // 反向commit操作
-6. git commit -m "worte a readme file"
+6. git reset HEAD &lt;file&gt; // 从暂存区撤回工作区
+7. git commit -m "worte a readme file"
    -m 后面就是本次提交的说明
-7. git status 查看版本库状态
-8. git diff   显示不同
-9. git log --pretty=oneline   查看提交日志
+8. git status 查看版本库状态
+9. git diff   显示不同
+10. git log --pretty=oneline   查看提交日志
 
 ps：
   1.使用命令行时，每次文件改动，需要重新add commit
@@ -110,6 +123,13 @@ remotes/origin/release
 * 入门篇（二）：git分支操作，推送gitlab、github
 <br>参考：[Github 创建新分支](http://blog.csdn.net/top_code/article/details/51931916)
 <pre>
+// 推送本地分支到github
+1.github上建repository,获取url
+2.将本地库与远程库进行关联
+$ git remote add origin git@github.com:michaelliao/learngit.git
+3.推送
+$ git push -u origin master
+
 // 一、查看分支
 1. git branch  查看本地分支
 2. git branch -r  查看远程分支
@@ -124,6 +144,11 @@ remotes/origin/release
 // 三、删除分支
 1. git branch -d [branch name] 删除本地分支
 2. git push origin :[branch name] 删除远程分支 
+
+// 四、合并分支
+1. git merge [branch name] 合并某分支到当前分支
+
+2. git log --graph --pretty=oneline --abbrev-commit 图形化方式查看分支日志
 </pre>
 
 
@@ -131,11 +156,11 @@ remotes/origin/release
 <pre>
 1.git log --pretty=oneline
  fe58d2599a66f481a52b52ddbceaccdbdc5091ff (HEAD -> master) i like git
- fffd2d660948b1d6511e93d814b8389757cabe84 1
+ fffd2d660948b1d6511e93d814b8389757cabe84 continue to insert
  2368b600bb17329b4fae9c9c12d49c3e89f1136c add readme file
  
 注意：fe58d2599a66f481a52b52ddbceaccdbdc5091ff就是commitID
-2.git reset --HEAD^
+2.git reset --hard HEAD^
  HEAD     表示当前版本
  HEAD^    表示上一个版本
  HEAD^^   表示上两个版本
@@ -195,9 +220,7 @@ idea飘红，脱离版本控制，不能git add到版本控制的文件。
 解决方法：先剪切到别的地方，git pull,再撤销。
 </pre>
 
-##### 2.对于脱离版本控制，不能再次添加的文件
+##### 2.
 <pre>
-idea飘红，脱离版本控制，不能git add到版本控制的文件。
 
-解决方法：先剪切到别的地方，git pull,再撤销。
 </pre>
