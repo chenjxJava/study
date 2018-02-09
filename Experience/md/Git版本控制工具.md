@@ -23,6 +23,7 @@ Git是分布式版本控制系统。
 ### 〇、下载
 * Git 官网下载：[http://git-scm.com/](http://git-scm.com/)
 * TortoiseGit 官网下载：[http://download.tortoisegit.org/tgit/](http://download.tortoisegit.org/tgit/)
+* Sourcetree [官网下载](https://downloads.atlassian.com/software/sourcetree/windows/ga/SourceTreeSetup-2.4.7.0.exe?_ga=2.12742519.1581950130.1518168210-432005008.1518168210)
 
 ### 重要：工作区、版本库和暂存区
 <pre>

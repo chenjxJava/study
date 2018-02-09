@@ -6,6 +6,9 @@
 
 简单说，vue就是简化了页面绑定数据的过程。
 
+* [vue-element-admin oschina](https://www.oschina.net/p/vue-element-admin)
+* [vue-element-admin 仓库地址](https://github.com/PanJiaChen/vue-element-admin)
+
 ### 一、安装
 ### 1.独立版本(推荐)<br>
 我们可以在[vue.js的官网上直接下载vue.min.js](http://vuejs.org/js/vue.min.js)并使用<script\>标签引入。
