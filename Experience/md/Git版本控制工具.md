@@ -147,7 +147,9 @@ $ git push -u origin master
 2. git push origin :[branch name] 删除远程分支 
 
 // 四、合并分支
-1. git merge [branch name] 合并某分支到当前分支
+1. git 
+2. 
+3.  [branch name] 合并某分支到当前分支
 
 2. git log --graph --pretty=oneline --abbrev-commit 图形化方式查看分支日志
 </pre>

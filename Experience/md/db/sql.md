@@ -65,3 +65,55 @@ AND NOT EXISTS (
 		REC.AUTHORID = bl.AUTHORID)
 </pre>
 
+<pre>
+// 插入或者更新
+<insert id="insertOrUpdateBookForBill">
+
+        MERGE INTO books_for_bill bfb USING (
+        SELECT #{bookId} as book_id from dual
+        ) TMP ON (
+        TMP.book_id = bfb.book_id
+        )
+        WHEN MATCHED THEN UPDATE
+        <set>
+            contract_standard = #{contractStandard}
+            , identity_id = #{identityId}
+            , guarantee_salary = #{guaranteeSalary}
+            , book_name = #{bookName}
+            , pseudonym = #{pseudonym}
+            , author_name = #{authorName}
+            , editor = #{editor}
+            , department = #{department}
+            , guarantee_start = #{guaranteeStart}
+            , guarantee_length = #{guaranteeLength}
+            , accounting_type = #{accountingType}
+            , price_per_thousand = #{pricePerThousand}
+            , contract_status = #{contractStatus}
+            , ditch_contract_status = #{ditchContractStatus}
+            , daily_standard = #{dailyStandard}
+            , monthly_standard = #{monthlyStandard}
+            , remark = #{remark}
+            , is_accounting = #{isAccounting}
+            , bank = #{bank}
+            , card_no = #{cardNo}
+            , phone_no = #{phoneNo}
+            , is_institution = #{isInstitution}
+            , supple_deal_status = #{suppleDealStatus}
+        </set>
+        WHEN NOT MATCHED THEN INSERT
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            id, book_id, book_Name, pseudonym, author_Name, department, editor,
+            contract_Status, ditch_Contract_Status, accounting_Type, guarantee_Start,
+            guarantee_Length, price_Per_Thousand, contract_Standard, daily_Standard,
+            monthly_Standard, is_Accounting, remark, bank, card_No, phone_No,
+            identity_Id, guarantee_Salary, is_institution, supple_deal_status
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            #{id}, #{bookId}, #{bookName}, #{pseudonym}, #{authorName}, #{department}, #{editor},
+            #{contractStatus}, #{ditchContractStatus}, #{accountingType}, #{guaranteeStart},
+            #{guaranteeLength}, #{pricePerThousand}, #{contractStandard}, #{dailyStandard},
+            #{monthlyStandard}, #{isAccounting}, #{remark}, #{bank}, #{cardNo}, #{phoneNo},
+            #{identityId}, #{guaranteeSalary}, #{isInstitution}, #{suppleDealStatus}
+        </trim>
+    </insert>
+</pre>

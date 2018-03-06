@@ -6,8 +6,11 @@
 
 简单说，vue就是简化了页面绑定数据的过程。
 
+* [vue官网教程（推荐）](https://cn.vuejs.org/v2/guide/installation.html)
 * [vue-element-admin oschina](https://www.oschina.net/p/vue-element-admin)
 * [vue-element-admin 仓库地址](https://github.com/PanJiaChen/vue-element-admin)
+* [vue学习之路](https://github.com/PanJiaChen/vue-element-admin/wiki)
+
 
 ### 一、安装
 ### 1.独立版本(推荐)<br>
@@ -23,12 +26,17 @@
 ### 3.npm安装
 [　　参考菜鸟教程](http://www.runoob.com/vue2/vue-install.html)
 
+　　使用npm命令需要安装node环境，简单说，就是要安装[node.js](https://www.ibm.com/developerworks/cn/opensource/os-nodejs/index.html?ca=drs#ibm-pcon)。
+[　　nodejs环境下载](https://nodejs.org/en/download/)
+
+[　　Node.js安装配置](http://www.runoob.com/nodejs/nodejs-install-setup.html)
+
 ### 二、简单的数据绑定(强大之处)
 
 
 ### 三、简写
 #### v-bind 缩写
->     　<!-- 完整语法 -->
+>     <!-- 完整语法 -->
 >	    <a v-bind:href="url"></a>
 >	    <!-- 缩写 -->
 >	    <a :href="url"></a>
