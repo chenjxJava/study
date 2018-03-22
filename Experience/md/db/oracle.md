@@ -121,3 +121,18 @@ SELECT m.*,ROWNUM FROM (
 					 ORDER BY a.AUDIT_LAST_SUBMIT_TIME DESC
 ) m WHERE ROWNUM = 1
 </pre>
+
+<pre>
+ <select id="getNotContributeBook" resultMap="BaseResultMap" parameterType="map">
+        <include refid="OracleDialectPrefix"/>
+        SELECT B.ID NEWCHAPTERID, B.CHAPTERTITLE NEWCHAPTER, B.CREATE_DT, BL.*, DB.DITCHBOOKID
+        FROM BOOKLIST BL
+        LEFT JOIN (
+         SELECT * FROM ( SELECT BOOKID,ID,CREATE_DT,CHAPTERTITLE,Row_Number() OVER (partition by BOOKID ORDER BY chapter_number desc) recordnum FROM BOOKCHAPTER ) WHERE recordnum = 1 
+        ) B ON B.BOOKID = BL.ID
+        LEFT JOIN DITCHBOOK DB ON DB.BOOKID = BL.ID
+        WHERE BL.AUTHORID = #{authorId} AND CONTRIBUTEBOOK = 0
+        ORDER BY SENDTIME DESC
+        <include refid="OracleDialectSuffix"/>
+    </select>
+</pre>
