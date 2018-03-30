@@ -1,6 +1,8 @@
 # Git版本控制工具
 > 分布式版本控制<br>
 > 分支管理<br>
+
+深入学习：[git深入学习网站](https://git-scm.com/book/zh/v2)
 <pre>
 PS:
   1.只针对于纯文本，图片、microsoft的Word格式是二进制格式。
@@ -124,12 +126,15 @@ remotes/origin/release
 * 入门篇（二）：git分支操作，推送gitlab、github
 <br>参考：[Github 创建新分支](http://blog.csdn.net/top_code/article/details/51931916)
 <pre>
-// 推送本地分支到github
+// 推送本地分支到github（仓库无内容）
 1.github上建repository,获取url
 2.将本地库与远程库进行关联
 $ git remote add origin git@github.com:michaelliao/learngit.git
 3.推送
 $ git push -u origin master
+
+// 仓库有内容
+参考：[rebase](https://www.cnblogs.com/jeremylee/p/5715289.html)
 
 // 一、查看分支
 1. git branch  查看本地分支

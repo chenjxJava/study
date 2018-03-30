@@ -11,6 +11,9 @@
 2. [markdown入门指南](http://www.jianshu.com/p/1e402922ee32/)，比较简洁的入门指南。[markdown语法英文版](https://daringfireball.net/projects/markdown/syntax)。
 3. [==RStudio==](https://www.rstudio.com/products/rstudio/download/)，可以快速将Markdown转化为演讲PPT、Word产品文档、LaTex论文甚至是用非常少量的代码完成最小可用原型
 
+##### 二、GitBook
+[GitBook入门（用github做出第一本书）——超详细配图说明](https://blog.csdn.net/hk2291976/article/details/51173850)
+
 #### 第二部分 技术
 > 这是对技术进行梳理的目录
 ##### 一、idea-->java编程利器
