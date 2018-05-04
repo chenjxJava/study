@@ -5,5 +5,3 @@
 > [ztree Demo下载](https://gitee.com/login?url_to=/zTree/zTree_v3/repository/archive/master.zip)
 
 ### 二、学习路线
-#### 1. 初始化
-######　　

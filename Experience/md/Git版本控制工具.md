@@ -135,6 +135,15 @@ $ git push -u origin master
 
 // 仓库有内容
 参考：[rebase](https://www.cnblogs.com/jeremylee/p/5715289.html)
+1.初始化
+$ git init
+2.拉操作
+$ git pull --rebase origin master
+3.添加
+$ git add add.php addok.php conn.php del.php edit.php editok.php ftpsql.sql index.php
+$ git commit -m "init files"
+4.推
+$ git push -u origin master
 
 // 一、查看分支
 1. git branch  查看本地分支
@@ -228,7 +237,17 @@ idea飘红，脱离版本控制，不能git add到版本控制的文件。
 解决方法：先剪切到别的地方，git pull,再撤销。
 </pre>
 
-##### 2.
+##### 2.新建分支，合并分支，删除分支流程
 <pre>
+// 1.新建分支
+git checkout -b issue-001
 
+// 1.1 TODO somthing
+...
+
+// 2.合并分支
+git merge issue-001
+
+// 3.删除分支
+git branch -d issue-001
 </pre>

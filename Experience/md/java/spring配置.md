@@ -20,4 +20,3 @@
     &lt;context:property-placeholder location="classpath:config/config.properties" ignore-unresolvable="true"/&gt;  
 &lt;/beans&gt; 
 </pre>
-2. 

@@ -93,4 +93,8 @@ window.addEventListener('popstate', function () {
 &lt;/script&gt;
 </pre>
 
+### 1.7 跳转浏览器顶部
+<pre>
+scrollTo(0,0);
+</pre>
 

@@ -6,6 +6,15 @@
 
 发送邮件之前，先下载javax.mail的jar包，jar包地址：[点击打开链接](http://download.csdn.net/detail/u013076997/9716263)
 
+当然也可以maven引入：
+<pre>
+&lt;dependency>
+    &lt;groupId>javax.mail&lt;/groupId>
+    &lt;artifactId>mail&lt;/artifactId>
+    &lt;version>1.4&lt;/version>
+&lt;/dependency>
+</pre>
+
 请发件人地址，收件人地址，发件人密码和要发送的附件请注意填写。
 <pre>
 package com;  

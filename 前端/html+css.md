@@ -6,6 +6,8 @@
 
 [HTML 速查列表](http://www.runoob.com/html/html-quicklist.html)<br>
 
+[CSS参考手册](http://css.doyoe.com/)
+
 
 ### 一、	开发流程
 1.	给div提供id属性，定html整体的结构。

@@ -1,4 +1,5 @@
 # Spring定时任务
+案例：[Spring整合Quartz分布式调度](https://my.oschina.net/OutOfMemory/blog/1790200)<br>
 学习：[quartz-core-learning](https://github.com/dufyun/quartz-core-learning)<br>
 参考：[Spring定时任务的几种实现](http://gong1208.iteye.com/blog/1773177)
 ### 一、使用场景
@@ -48,3 +49,6 @@ ClassUtils-111-return classLoaderToUse.loadClass(name);
 ### 四、quartz好好学习
 [Quartz学习——Spring和Quartz集成详解（三）](http://blog.csdn.net/u010648555/article/details/54891264)
 http://blog.csdn.net/u010648555/article/details/54891264
+
+### 五、cron表达式
+[quartz 时间表达式----- Cron表达式详解](https://blog.csdn.net/u012888052/article/details/53907413)

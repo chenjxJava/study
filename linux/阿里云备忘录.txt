@@ -20,7 +20,6 @@ http://120.78.147.1/ssm/
 2.dubbo项目地址
 http://120.78.147.1/dubbo/
 
-xuke：
-120.79.194.215  
-服务器：账号root 密码xkdaq8023
-阿里云 wangliang18929  密码xkdaq8023
+xuke：  
+47.94.244.238
+服务器：账号root 密码Xkdaq8023
