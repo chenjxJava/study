@@ -29,6 +29,10 @@
 [　3. 设计模式Design Mode](https://github.com/chenjxJava/study/blob/master/Experience/md/DesignMode/Design%20Mode.md)
 
 
+4.docker
+
+5.spring task,线程池执行定时任务
+
 ##### 二、python
 [python学习（廖雪峰的博客）](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000)
 
