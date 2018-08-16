@@ -3,18 +3,61 @@
 <pre>
 ZooKeeper是Apache Hadoop的子项目。
 是一个树型的目录服务，支持变更推送，适合作为dubbo的注册中心，工业强度较高，可用于生产环境。
+
+一、Zookeeper提供了什么？
+1.文件系统 --->目录服务（目录的增删查改，目录可以存放数据）
+2.通知机制 --->Watch监听
+
+ 1.1.zookeeper文件系统
+  1.4种节点（持久与临时，编号与非编号） 
+  2.节点可以存储数据
+ 
+ 2.1.zookeeper通知机制
+  客户端注册监听它关心的目录节点，当目录节点发生变化（数据改变、被删除、子目录节点增加删除）时，zookeeper会通知客户端。
+
+二、zookeeper做了什么？
+1.命名服务
+2.配置管理
+3.集群管理
+4.分布式锁
+5.队列管理
 </pre>
+
+关于文件系统
+![](https://github.com/chenjxJava/photos/blob/master/zookeeper/fileSystem.png?raw=true)
+
+关于通知系统
+![](https://github.com/chenjxJava/photos/blob/master/zookeeper/waterSystem.png?raw=true)
 ### 一、安装
-官网下载，解压，zoo.cfg
+<pre>
+1.官网下载
+2.解压
+3.zoo.cfg
+</pre>
 
-[zookeeper的功能以及工作原理](https://www.cnblogs.com/felixzh/p/5869212.html)
+### 参考：[zookeeper windows单机模式和伪集群模式](https://blog.csdn.net/lovesummerforever/article/details/48975703)
 
-[zookeeper windows单机模式和伪集群模式](https://blog.csdn.net/lovesummerforever/article/details/48975703)
+<pre>
+1.zoo.cfg 
+  //zk数据存放目录   
+  dataDir= /usr/java/zookeeper/server1/data
+  //zk日志
+  dataLogDir=/user/java/zookeeper/server1/dataLog
+  //端口号不能相同，否则冲突
+  client=2181
+  //都相同
+  server.1=127.0.0.1:2887:3887
+  server.2=127.0.0.1:2888:3888
+  server.3=127.0.0.1:2889:3889
+注意：集群情况，需要在data目录，echo 1 > myid,标识机器
+
+2.zkServer.sh start zoox.cfg
+</pre>
 
 ### 二、CLS 
 <pre>
-1.zkCli.sh连接客户端
-
+1.zkCli.sh连接客户端 -server 127.0.0.1:2181
+zkServer.sh status xxx.cfg
 2.查看目录
 > ls /
 > ls /zookepper
@@ -32,7 +75,11 @@ ZooKeeper是Apache Hadoop的子项目。
 > set /node1 modifyData
 </pre>
 
+
+
 ### 三、java api
+### [zookeeper集群配置与启动](https://www.cnblogs.com/8899man/p/5710191.html)
+
 ### 参考：[Zookeeper的java客户端API使用方法（五）](https://blog.csdn.net/jiuqiyuliang/article/details/56012027)
 
 ### [Zookeeper Api(java)入门与应用【重点】](http://www.cnblogs.com/ggjucheng/p/3370359.html)
