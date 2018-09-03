@@ -1,0 +1,15 @@
+Mysql的IO和内存
+0.不能滥用索引
+1.如何使用联合索引
+区分度高的
+字段名长短
+频繁使用
+
+2.复合索引
+
+3.不要有重复索引和冗余索引
+重复索引：primary key(id) index(id)  unique index(id)
+冗余索引：index(a) index(a,b) index(a,b,c)
+
+4.关于外键，不要建立外键约束，但关联项必须加索引
+
