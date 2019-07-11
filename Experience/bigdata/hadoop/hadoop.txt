@@ -1,0 +1,24 @@
+# 启动hdfs
+${HADOOP_HOME}/sbin/hadoop-daemon.sh start namenode
+${HADOOP_HOME}/sbin/hadoop-daemon.sh start datanode
+${HADOOP_HOME}/sbin/hadoop-daemon.sh start secondarynamenode
+### hdfs相关操作
+>${HADOOP_HOME}/bin/hdfs dfs -mkdir /demo1
+>${HADOOP_HOME}/bin/hdfs dfs -put ${HADOOP_HOME}/etc/hadoop/core-site.xml /demo1
+>${HADOOP_HOME}/bin/hdfs dfs -cat /demo1/core-site.xml
+>${HADOOP_HOME}/bin/hdfs dfs -ll /demo1
+### 从HDFS上下载文件到本地
+>./bin/hdfs dfs -get /demo1/core-site.xml
+
+
+# 启动yarn
+### Resourcemanager
+>${HADOOP_HOME}/sbin/yarn-daemon.sh start resourcemanager
+### nodemanager
+>${HADOOP_HOME}/sbin/yarn-daemon.sh start nodemanager
+
+
+beeline -u jdbc:hive2://localhost:10000 -n guest 连接server时
+hive:
+  用户名：guest
+  密码：guest

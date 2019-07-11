@@ -1,0 +1,1 @@
+[yum安装jdk环境变量配置](https://www.cnblogs.com/benjamin77/p/8460030.html)

@@ -18,18 +18,31 @@
 
 ### 2.使用CDN方法(Content Delivery Network，即内容分发网络)<br>
 　　以下推荐国外比较稳定的两个CDN，国内还没发现哪一家比较好，目前还是建议下载到本地。<br>
->
-　BootCDN（国内）: https://cdn.bootcss.com/vue/2.2.2/vue.min.js<br>
-　unpkg：https://unpkg.com/vue/dist/vue.js, 会保持和 npm 发布的最新的版本一致。<br>
-　cdnjs : https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.8/vue.min.js<br>
+>　BootCDN（国内）: https://cdn.bootcss.com/vue/2.2.2/vue.min.js<br>
+>　unpkg：https://unpkg.com/vue/dist/vue.js, 会保持和 npm 发布的最新的版本一致。<br>
+>　cdnjs : https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.8/vue.min.js<br>
 
 ### 3.npm安装
-[　　参考菜鸟教程](http://www.runoob.com/vue2/vue-install.html)
+[参考菜鸟教程](http://www.runoob.com/vue2/vue-install.html)
 
 　　使用npm命令需要安装node环境，简单说，就是要安装[node.js](https://www.ibm.com/developerworks/cn/opensource/os-nodejs/index.html?ca=drs#ibm-pcon)。
-[　　nodejs环境下载](https://nodejs.org/en/download/)
+[nodejs环境下载](https://nodejs.org/en/download/)
 
-[　　Node.js安装配置](http://www.runoob.com/nodejs/nodejs-install-setup.html)
+[Node.js安装配置](http://www.runoob.com/nodejs/nodejs-install-setup.html)
+
+[cnpm安装]( http://www.runoob.com/nodejs/nodejs-npm.html#taobaonpm)(需要npm 3.0以上 npm -v)
+
+```
+$ npm install -g cnpm --registry=https://registry.npm.taobao.org
+```
+
+这样就可以使用 cnpm 命令来安装模块了：
+
+```
+$ cnpm install [name]
+```
+
+
 
 ### 二、简单的数据绑定(强大之处)
 
@@ -37,12 +50,12 @@
 ### 三、简写
 #### v-bind 缩写
 >     <!-- 完整语法 -->
->	    <a v-bind:href="url"></a>
->	    <!-- 缩写 -->
->	    <a :href="url"></a>
+>	​    <a v-bind:href="url"></a>
+>	​    <!-- 缩写 -->
+>	​    <a :href="url"></a>
 
 #### v-on 缩写
 >     　<!-- 完整语法 -->
->	    <a v-on:click="doSomething"></a>
->	    <!-- 缩写 -->
->	    <a @click="doSomething"></a>
+>	​    <a v-on:click="doSomething"></a>
+>	​    <!-- 缩写 -->
+>	​    <a @click="doSomething"></a>

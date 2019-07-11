@@ -1,6 +1,5 @@
 # java跨域问题
-### 一、解决方案
-使用MappingJacksonValue
+### 方案一、 MappingJacksonValue
 
 <pre>
 import org.springframework.http.converter.json.MappingJacksonValue;
@@ -31,4 +30,9 @@ public class DemoController {
 3、callback的参数名称也可以更改，一般不需要。
 
 4、jsonp内部原理还是利用jackson的支持，把数据渲染成js字符串形式返回给客户端
+</pre>
+
+方案二、后台请求
+<pre>
+
 </pre>

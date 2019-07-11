@@ -1,0 +1,6 @@
+背景：
+  由于现有数据多存储在mysql,oracle等数据库，内存计算，
+  需要将数据迁移到hdfs，hive进行内存计算，并有可能需要
+  将结果存储到mysql,oracle数据库。
+需求：
+  需要在大数据平台安装sqoop组件，用来在Hadoop(Hive)与传统的数据库(mysql、oracle...)间进行数据的传递
