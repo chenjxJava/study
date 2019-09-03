@@ -1,4 +1,0 @@
-1.Spark运行异常：java.lang.AbstractMethodError
-maven依赖和spark版本问题
-
-2.
