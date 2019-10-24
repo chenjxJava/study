@@ -22,4 +22,3 @@ LEVEL：选项TRACE, DEBUG, INFO, WARN, ERROR, FATAL, OFF
 
 logging.level.com.dudu=DEBUG：com.dudu包下所有class以DEBUG级别输出
 logging.level.root=WARN：root日志以WARN级别输出
-</pre>

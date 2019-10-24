@@ -1,6 +1,7 @@
 # springboot打包
 1.pom.xml中添加mainClass
-<pre>
+
+``` xml
 <build>
         <plugins>
             <plugin>
@@ -13,10 +14,10 @@
             </plugin>
         </plugins>
     </build>
-</pre>
+```
 
 2.启动类继承SpringBootServletInitializer，并重写config方法
-<pre>
+```xml
 @SpringBootApplication
 // mapper 接口类扫描包配置
 @MapperScan("com.chenjx.redwars.dao")
@@ -26,14 +27,13 @@ public class RedwarsApplication extends SpringBootServletInitializer {
     public static void main(String[] args) {
         SpringApplication.run(RedwarsApplication.class, args);
     }
-
+    
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
         return builder.sources(this.getClass());
     }
 }
-
-</pre>
+```
 
 3.maven clean install打包即可
 

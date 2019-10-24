@@ -1,7 +1,7 @@
 # Springboot使用task
 > 参考：[SpringBoot几种定时任务的实现方式](https://blog.csdn.net/wqh8522/article/details/79224290)
 ### 一、编写定时任务类
-<pre>
+```
 @Component
 public class MyTask {
 
@@ -19,9 +19,9 @@ public class MyTask {
     }
 
 }
-</pre>
+```
 ### 二、启动类XXXAplication上打上@EnableScheduling//定时任务 
-<pre>
+```
 这样执行定时任务，会在一个线程池里面串行执行
 // Thread.currentThread().getName()可以打印当前线程名
 
@@ -32,10 +32,10 @@ pool-1-thread-1=====>>>>>使用cron  1533784710002
 pool-1-thread-1=====>>>>>使用fixedRate1533784712811
 pool-1-thread-1=====>>>>>fixedDelay{}1533784712813
 pool-1-thread-1=====>>>>>使用cron  1533784715001
-</pre>
+```
 
 ### 三、启动类XXXAplication上面打上@EnableAysnc，此外还需要在@Scheduled注解上，打上@Aysnc
-<pre>
+```
 // 改造后的定时任务类
 @Component
 public class MyTask {
@@ -45,13 +45,13 @@ public class MyTask {
     public void scheduled(){
         System.out.println(Thread.currentThread().getName()+ "=====>>>>>使用cron  "+ System.currentTimeMillis());
     }
-
+    
     @Async
     @Scheduled(fixedRate = 5000)
     public void scheduled1() {
         System.out.println(Thread.currentThread().getName()+ "=====>>>>>使用fixedRate" + System.currentTimeMillis());
     }
-
+    
     @Async
     @Scheduled(fixedDelay = 5000)
     public void scheduled2() {
@@ -84,10 +84,10 @@ SimpleAsyncTaskExecutor-20=====>>>>>fixedDelay{}1533785068484
 
 
 默认使用SimpleAsyncTaskExecutor，每执行一次都会开启一个新的线程
-</pre>
+```
 
 ### 四、配置
-<pre>
+```
 // 1.application.yml中
 async:
   corePoolSize: 10
@@ -117,11 +117,11 @@ async:
      return executor;
  }
 }
-</pre>
+```
 
 
 ### 附录：@Scheduled源码
-<pre>
+```
 //
 // Source code recreated from a .class file by IntelliJ IDEA
 // (powered by Fernflower decompiler)
@@ -144,19 +144,19 @@ public @interface Scheduled {
     String cron() default "";
 
     String zone() default "";
-
+    
     long fixedDelay() default -1L;
-
+    
     String fixedDelayString() default "";
-
+    
     long fixedRate() default -1L;
-
+    
     String fixedRateString() default "";
-
+    
     long initialDelay() default -1L;
-
+    
     String initialDelayString() default "";
 }
-</pre>
+```
 
 
