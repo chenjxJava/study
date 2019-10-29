@@ -3,7 +3,7 @@
 > 俗话说的好，工欲善其事，必先利其器。做任何事情，确定要准确的行动路线，再加上使用辅之有效的工具，可以大大地提升工作效率。
 > 
 > typora一款软件，做笔记很好用。（推荐好用）
-##### 一、markdown-->记录学习笔记
+#### 一、markdown-->记录学习笔记
 > Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。
 
 <html><div style="margin-left:40px">
@@ -15,19 +15,19 @@
 
 
 
-##### 二、idea-->java编程利器
+#### 二、idea-->java编程利器
 
 [idea--自我总结![image](https://github.com/chenjxJava/photos/blob/master/idea/20171121144825.png?raw=true)](https://github.com/chenjxJava/study/blob/master/idea/idea--%E8%87%AA%E6%88%91%E6%80%BB%E7%BB%93.md)
 
 
 
-##### 三、Git版本控制工具
+#### 三、Git版本控制工具
 
 [Git版本控制工具](https://github.com/chenjxJava/study/blob/master/Experience/md/Git%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E5%B7%A5%E5%85%B7.md)
 
 
 
-##### 四、GitBook
+#### 四、GitBook
 
 [GitBook入门（用github做出第一本书）——超详细配图说明](https://blog.csdn.net/hk2291976/article/details/51173850)
 
@@ -37,7 +37,7 @@
 
 > 这是对技术进行梳理的目录
 
-##### 一、java
+#### 一、java
 
 [1. java项目启动流程](https://github.com/chenjxJava/study/blob/master/Experience/md/java/%E9%A1%B9%E7%9B%AE%E5%90%AF%E5%8A%A8%E6%B5%81%E7%A8%8B.md)　
 
@@ -49,11 +49,9 @@
 
 [5.spring task,线程池执行定时任务](https://github.com/chenjxJava/study/blob/master/Experience/springboot/Springboot%E4%BD%BF%E7%94%A8task.md)
 
-[6.springboot入门](https://github.com/chenjxJava/study/blob/master/Experience/springboot/spring%E5%85%A5%E9%97%A8.md)
+[6.支付包接口相关](https://github.com/chenjxJava/study/blob/master/module/%E6%94%AF%E4%BB%98%E5%AE%9D/%E6%94%AF%E4%BB%98%E5%AE%9D%E6%8E%A5%E5%8F%A3.md)
 
-[7.支付包接口相关](https://github.com/chenjxJava/study/blob/master/module/%E6%94%AF%E4%BB%98%E5%AE%9D/%E6%94%AF%E4%BB%98%E5%AE%9D%E6%8E%A5%E5%8F%A3.md)
-
-##### 二、python
+#### 二、python
 
 [python学习（廖雪峰的博客）](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000)
 
@@ -61,17 +59,21 @@
 
 ## 第三部分 新技术
 
-##### 一、docker
+#### 一、docker
 
 [docker汇总](https://github.com/chenjxJava/study/blob/master/Experience/docker/docker%E7%9B%B8%E5%85%B3.md)
 
-##### 二、springboot
+#### 二、springboot
 
-##### 三、springcloud
+[1.springboot入门](https://github.com/chenjxJava/study/blob/master/Experience/springboot/spring%E5%85%A5%E9%97%A8.md)
+
+[2.idea springboot项目多端口启动](Intellij IDEA实现SpringBoot项目多端口启动)
+
+#### 三、springcloud
 
 ## 第四部分 服务器、数据库
 
-##### 一、linux
+#### 一、linux
 
 [Linux学习（跟鸟哥学就ok了）](http://linux.vbird.org/linux_basic/)
 
@@ -83,9 +85,9 @@
 5. 防火墙。
 6. Shell编程等
 ```
-##### 二、oracle
+#### 二、oracle
 [oracle](https://github.com/chenjxJava/study/blob/master/Experience/md/db/oracle.md)
-##### 三、 mysql
+#### 三、 mysql
 
 
 
@@ -93,8 +95,8 @@
 　[前端目录](https://github.com/chenjxJava/study/blob/master/%E5%89%8D%E7%AB%AF/%E5%89%8D%E7%AB%AF%E7%9B%AE%E5%BD%95.md)
 
 ## 第六部分 其他 
-##### [一、Powerful Tool（百度网盘、好用、辅助工具）](https://github.com/chenjxJava/study/blob/master/Experience/md/Powerful%20Tool%EF%BC%88%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E3%80%81%E5%A5%BD%E7%94%A8%E3%80%81%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%EF%BC%89.md)
-##### [二、在线文档-自我整理](https://github.com/chenjxJava/study/blob/master/Experience/md/%E5%9C%A8%E7%BA%BF%E6%96%87%E6%A1%A3.md)
+#### [一、Powerful Tool（百度网盘、好用、辅助工具）](https://github.com/chenjxJava/study/blob/master/Experience/md/Powerful%20Tool%EF%BC%88%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E3%80%81%E5%A5%BD%E7%94%A8%E3%80%81%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%EF%BC%89.md)
+#### [二、在线文档-自我整理](https://github.com/chenjxJava/study/blob/master/Experience/md/%E5%9C%A8%E7%BA%BF%E6%96%87%E6%A1%A3.md)
 
 
 [廖雪峰](https://www.liaoxuefeng.com/)
