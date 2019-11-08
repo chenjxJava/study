@@ -4,13 +4,15 @@
 
 [Go语言中文网（推荐）](https://studygolang.com)
 
+> 学习，建议先阅读[如何使用Go编程](http://docscn.studygolang.com/doc/code.html#%E7%BB%84%E7%BB%87)，你会对GO有个基本的概念
+>
+> 进阶，建议阅读[Effective_Go编程](http://docscn.studygolang.com/doc/effective_go.html)
+
 
 
 ### 一、下载\安装
 
 > [golang环境下载](https://studygolang.com/dl),安装GOlang环境，配置GOROOT、GOPATH
->
-> [GOLang入门Helloworld(**必读**)](http://docscn.studygolang.com/doc/code.html#%E7%BB%84%E7%BB%87)
 
 ##### 1.GOROOT、GOPATH区别说明：
 
