@@ -31,6 +31,12 @@
 
 [GitBook入门（用github做出第一本书）——超详细配图说明](https://blog.csdn.net/hk2291976/article/details/51173850)
 
+[GitBook Editor 安装](https://chenhx89.github.io/web-note/GitBook%20Editor%20%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0.html)
+
+#### 五、Showdoc
+
+[Showdoc docker部署（官方）](https://www.showdoc.cc/help?page_id=65610)
+
 
 
 ## 第二部分 语言相关
@@ -56,6 +62,8 @@
 #### 二、Golang
 
 [GOlang入门](https://github.com/chenjxJava/study/blob/master/Experience/bigdata/go/go.md)
+
+[go mod包管理](https://github.com/chenjxJava/study/blob/master/Experience/bigdata/go/gomod.md)
 
 #### 三、python
 
