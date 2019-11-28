@@ -17,7 +17,7 @@
 
 #### 二、idea-->java编程利器
 
-[idea--自我总结![image](https://github.com/chenjxJava/photos/blob/master/idea/20171121144825.png?raw=true)](https://github.com/chenjxJava/study/blob/master/idea/idea--%E8%87%AA%E6%88%91%E6%80%BB%E7%BB%93.md)
+[idea--自我总结![image](https://github.com/chenjxJava/photos/blob/master/idea/20171121144825.png?raw=true)](https://github.com/chenjxJava/study/blob/master/tool/idea/idea--%E8%87%AA%E6%88%91%E6%80%BB%E7%BB%93.md)
 
 
 
@@ -45,7 +45,7 @@
 
 #### 一、java
 
-[1. java项目启动流程](https://github.com/chenjxJava/study/blob/master/Experience/md/java/%E9%A1%B9%E7%9B%AE%E5%90%AF%E5%8A%A8%E6%B5%81%E7%A8%8B.md)　
+[1. java项目启动流程](https://github.com/chenjxJava/study/blob/master/language/java/%E9%A1%B9%E7%9B%AE%E5%90%AF%E5%8A%A8%E6%B5%81%E7%A8%8B.md)　
 
 [2.关于服务器项目部署](https://github.com/chenjxJava/study/blob/master/database_server/deploy/deploy.md)
 
@@ -106,7 +106,7 @@
 6. Shell编程等
 ```
 #### 二、oracle
-[oracle](https://github.com/chenjxJava/study/blob/master/database_server/md/db/oracle.md)
+[oracle](https://github.com/chenjxJava/study/blob/master/database_server/db/oracle.md)
 
 #### 三、 mysql
 

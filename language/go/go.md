@@ -113,7 +113,7 @@ fmt.Println(a)
 
 > slice相当于直接操作的是数组指针（引用类型，可以改变数组）
 
-![](https://github.com/chenjxJava/photos/blob/master/idea/20171121144825.png?raw=true)
+![](https://github.com/chenjxJava/photos/blob/master/go/slice/slice_struct.png?raw=true)
 
 - ptr len cap --> index
 - slice可以向后扩展，不可以向前扩展

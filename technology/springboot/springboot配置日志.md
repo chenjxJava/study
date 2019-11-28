@@ -1,14 +1,19 @@
 
 ### 一、yml文件,关闭日志
 [参考：Spring Boot 日志配置(超详细)](https://blog.csdn.net/inke88/article/details/75007649#级别控制)
-<pre>
-1.application.yml
+			
+				
+#### 1.application.yml
+``` yml
 logging:
   level:
     root: off
+```
 
-2.application.properties
+#### 2.application.properties
+``` properties
 logging.level.root=off
+```
 
 
 【级别控制】
