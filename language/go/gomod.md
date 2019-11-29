@@ -6,7 +6,7 @@
 
 #### 1.idea，go mod使用代理
 
-- File--->Settings-->Languages & Framworks--->Go--->Go Muodules(vgo)-->Proxy:填写 https://goproxy.io
+- File--->Settings-->Languages & Framworks--->Go--->Go Muodules(vgo)-->Proxy:填写 	
 
 ![image](https://github.com/chenjxJava/photos/blob/master/go/mod/idea_gomod_proxy.png?raw=true)
 

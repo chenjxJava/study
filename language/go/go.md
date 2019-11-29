@@ -481,12 +481,12 @@ go run -race main.go
 
 
 
-### 七、channel
+### 七、channel(csp模型)
 
 - Don`t communicate by sharing memory;share memory by communicating
 - 不要通过共享内存来通信；通过通信来共享内存
 
-```
+```go
 chan<- int //only receivce
 
 <-chan int //only send
@@ -495,7 +495,6 @@ var wg sync.WaitGroup
 wg.add(20) // 添加
 wg.Wait()  // 等待
 wg.Done()  // 结束
-
 ```
 
 
@@ -522,7 +521,7 @@ go test -bench
   - go to
 
 ##### 2.其他库
-
+###### 2. 1 标准库
 - bufio
 - encoding/json
 - time
@@ -536,9 +535,7 @@ go test -bench
 
 
 
-
-
-九、广度优先算法
+### 九、广度优先算法
 
 ```
 6 5
@@ -550,9 +547,15 @@ go test -bench
 0 1 0 0 0 
 ```
 
+### 十、传统同步机制
 
+#### 1.WaitGroup
 
-### 十、爬虫项目
+#### 2.Mutex
+
+#### 3.Cond
+
+### 十一、爬虫项目
 
 ##### 1.1 为什么爬虫项目
 
