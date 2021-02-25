@@ -2,7 +2,7 @@
 
 ### 〇、学习网站
 
-[Go语言中文网（推荐）](https://studygolang.com)
+[Go语言中文网（推荐）](https://studygolang.com), [Go学习（推荐）](http://c.biancheng.net/golang/intro/)
 
 > 学习，建议先阅读[如何使用Go编程](http://docscn.studygolang.com/doc/code.html#%E7%BB%84%E7%BB%87)，你会对GO有个基本的概念
 >

@@ -31,3 +31,9 @@
 > 本地需要docker环境，将项目打包成镜像。
 
 项目demo地址：https://github.com/chenjxJava/docker_start
+
+
+
+
+
+ echo '{ "insecure-registries":["58.59.43.23:5000"] }' > /etc/docker/daemon.json 

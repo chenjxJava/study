@@ -6,9 +6,6 @@
 #### 一、markdown-->记录学习笔记
 > Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。
 
-<html><div style="margin-left:40px">
-<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1511328559316&di=aca1b4fbff63213dec6bca91e91be350&imgtype=0&src=http%3A%2F%2Fwww.cncrk.com%2Fup%2F1409%2F201409090822177261.png"/></div></html>
-
 1. 简单说，[markdown](http://www.appinn.com/markdown/index.html)就是一种语法简洁，功能强大，学习成本低，适用于博客的==标记语言==。
 2. [markdown入门指南](http://www.jianshu.com/p/1e402922ee32/)，比较简洁的入门指南。[markdown语法英文版](https://daringfireball.net/projects/markdown/syntax)。
 3. [==RStudio==](https://www.rstudio.com/products/rstudio/download/)，可以快速将Markdown转化为演讲PPT、Word产品文档、LaTex论文甚至是用非常少量的代码完成最小可用原型

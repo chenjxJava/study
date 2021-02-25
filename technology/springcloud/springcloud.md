@@ -11,8 +11,6 @@
 
 [SpringBoot2.2.0.REALESE+SpringCloud项目地址](https://github.com/chenjxJava/springcloud-learn/tree/master/ribbon)
 
-
-
 > 注册中心,
 > provider   --------->eureka     ----------> consumer
 >
@@ -146,3 +144,17 @@ Dalston 1.5.x
 ```
 
  最新对应关系可以查看官网https://spring.io/projects/spring-cloud 
+
+
+
+## 七、示例
+
+##### 1.两个消费者，两个提供者
+
+![](https://www.showdoc.cc/server/api/common/visitfile/sign/13baa80910b6e19a39a815160254465a?showdoc=.jpg)
+
+
+
+##### 2.配置feign,调用别人的服务
+
+![1589186009131](C:\Users\HP\AppData\Roaming\Typora\typora-user-images\1589186009131.png)
