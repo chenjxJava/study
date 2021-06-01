@@ -114,3 +114,13 @@
 
 ![1614243662145](C:\Users\HP\AppData\Roaming\Typora\typora-user-images\1614243662145.png)
 
+#### 6.项目组织级
+
+![1614246997984](C:\Users\HP\AppData\Roaming\Typora\typora-user-images\1614246997984.png)
+
+#### 7.项目和开发生命周期
+
+![1614247276902](C:\Users\HP\AppData\Roaming\Typora\typora-user-images\1614247276902.png)
+
+![1614247595590](C:\Users\HP\AppData\Roaming\Typora\typora-user-images\1614247595590.png)
+
