@@ -8,6 +8,3 @@
 ### node.js
 [7天学习node.js](https://www.oschina.net/p/7-days-nodejs)
 
-USERINFO
-username 1947759000789761
-PASSWORD E10ADC3949BA59ABBE56E057F20F883E

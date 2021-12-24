@@ -15,7 +15,6 @@ PS:
 <pre>
 CVS和SVN都是集中式的版本控制系统。
 Git是分布式版本控制系统。
-
 集中式版本控制系统，版本库是集中存放在中央服务器的，而干活的时候，用的都是自己的电脑，所以要先从中央服务器取得最新的版本，
 然后开始干活，干完活了，再把自己的活推送给中央服务器。中央服务器就好比是一个图书馆，你要改一本书，必须先从图书馆借出来，
 然后回到家自己改，改完了，再放回图书馆。
@@ -162,7 +161,6 @@ $ git push -u origin master
 
 // 四、合并分支
 1. git 
-2. 
 3.  [branch name] 合并某分支到当前分支
 
 2. git log --graph --pretty=oneline --abbrev-commit 图形化方式查看分支日志
@@ -175,14 +173,14 @@ $ git push -u origin master
  fe58d2599a66f481a52b52ddbceaccdbdc5091ff (HEAD -> master) i like git
  fffd2d660948b1d6511e93d814b8389757cabe84 continue to insert
  2368b600bb17329b4fae9c9c12d49c3e89f1136c add readme file
- 
+
 注意：fe58d2599a66f481a52b52ddbceaccdbdc5091ff就是commitID
 2.git reset --hard HEAD^
  HEAD     表示当前版本
  HEAD^    表示上一个版本
  HEAD^^   表示上两个版本
  HEAD~100 表示上100版本
- 
+
 注意:reset 可以根据commitID进行回滚
 3.git reflog
  fe58d25 (HEAD -> master) HEAD@{0}: reset: moving to fe58d259
