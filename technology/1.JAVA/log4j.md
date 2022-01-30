@@ -4,3 +4,4 @@
 <pre>
 Log4j建议只使用四个级别，优先级从高到低分别是 ERROR、WARN、INFO、DEBUG。
 </pre>
+
